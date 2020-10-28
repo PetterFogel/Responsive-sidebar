@@ -88,6 +88,7 @@ header {
         transition: all 500ms ease;
     }
 
+    /* Toggle class */
     .sidebar-active {
         transform: translateX(0);
     }
