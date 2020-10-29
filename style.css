@@ -17,7 +17,7 @@ header {
 
 .burger {
     color: rgb(251, 53, 53);
-    margin: 1rem;
+    margin: 1rem 4rem;
     font-size: 2rem;
     display: none;
     cursor: pointer;
@@ -70,6 +70,12 @@ header {
     padding: 2rem 0;
 }
 
+.exit {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
 .nav-icons li:hover {
     background: grey;
     border-right: 3px solid rgb(251, 53, 53);
@@ -79,13 +85,21 @@ header {
 @media (max-width: 768px) {
     .burger {
         display: inline-block;
-        z-index: 10;
     }
 
     .sidebar {
         width: 10rem;
         transform: translateX(-100%);
         transition: all 500ms ease;
+    }
+
+    .exit {
+        display: block;
+    }
+
+    .nav-icons li:first-child {
+        background: none;
+        border: none;
     }
 
     /* Toggle class */
